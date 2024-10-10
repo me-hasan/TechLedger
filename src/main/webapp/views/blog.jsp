@@ -1,6 +1,6 @@
 
-            <!-- Include Header -->
-            <jsp:include page="includes/header.jsp" />
+    <!-- Include Header -->
+    <jsp:include page="includes/header.jsp" />
 
 
     <!-- About Icons -->

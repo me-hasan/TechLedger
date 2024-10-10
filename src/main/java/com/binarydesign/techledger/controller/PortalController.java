@@ -1,33 +1,46 @@
 package com.binarydesign.techledger.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class PortalController {
 
-    @RequestMapping({"/","/home"})
+    @GetMapping({"/","/home"})
     public String home() {
         return "home";
     }
 
-    @RequestMapping({"/about"})
+    @GetMapping({"/about"})
     public String about() {
         return "about";
     }
 
-    @RequestMapping({"/cases"})
+    @GetMapping({"/cases"})
     public String cases() {
         return "cases";
     }
 
-    @RequestMapping({"/blog"})
+    @GetMapping({"/blog"})
     public String blog() {
         return "blog";
     }
 
-    @RequestMapping({"/contact"})
+    @GetMapping({"/contact"})
     public String contact() {
         return "contact";
+    }
+
+    @GetMapping({"/addBlog"})
+    public String addBlog() {
+        return "addBlog";
+    }
+
+    @PostMapping("/handleBlogForm")
+    public String handleBlogForm(Model model){
+        return "success";
     }
 }

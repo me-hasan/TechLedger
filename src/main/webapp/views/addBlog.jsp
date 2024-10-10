@@ -33,18 +33,14 @@
     <!-- Blog Page -->
     <div id="blog" class="blog flex-columns">
         <div class="row">
-            <form id="addBlogForm" action="/handleBlogForm" method="post" enctype="multipart/form-data">
+            <form action="/handleBlogForm" method="post">
                 <div class="mb-3">
                     <label for="blogTitle" class="form-label">Title</label>
-                    <input type="text" class="form-control" id="blogTitle" required>
-                </div>
-                <div class="mb-3">
-                    <label for="blogDate" class="form-label">Date</label>
-                    <input type="date" class="form-control" id="blogDate" required>
+                    <input type="text" class="form-control" name="blogTitle" id="blogTitle" required>
                 </div>
                 <div class="mb-3">
                     <label for="blogContent" class="form-label">Content</label>
-                    <textarea class="form-control" id="blogContent" rows="3" required></textarea>
+                    <textarea class="form-control" name="blogDetails" id="blogContent" rows="3" required></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="blogImage" class="form-label">Upload Image</label>

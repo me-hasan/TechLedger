@@ -17,7 +17,7 @@ public class BlogService {
         repo.addBlog(blogPost);
     }
 
-    public List<BlogPost> getAllBlog(){
+    public List<BlogPost> getAllBlogs(){
         return repo.getAllBlogs();
     }
 }

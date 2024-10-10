@@ -1,4 +1,3 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page import="com.binarydesign.techledger.model.BlogPost" %>
 <%
    BlogPost blogPost = (BlogPost) request.getAttribute("blogPost");

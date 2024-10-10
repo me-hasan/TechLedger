@@ -1,4 +1,9 @@
 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page isELIgnored="false"%>
+<%@ page import="java.util.List" %>
+<%@ page import="com.binarydesign.techledger.model.BlogPost" %>
+<%@ page import="com.binarydesign.techledger.repo.BlogRepo" %>
     <!-- Include Header -->
     <jsp:include page="includes/header.jsp" />
 
@@ -32,6 +37,7 @@
 
     <!-- Blog Page -->
     <div id="blog" class="blog flex-columns">
+     <c:forEach var="blogPost" items="${blogPosts}">
         <div class="row">
             <div class="column">
                 <div class="column-2">
@@ -41,32 +47,14 @@
             <div class="column">
                 <div class="column-2 bg-secondary">
                     <h4>May 21 2020</h4>
-                    <h2>Blog Post 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eum. Molestiae sed suscipit
-                        repellendus, tenetur repudiandae unde at possimus odio quos doloribus ducimus quas similique et
-                        incidunt, consequatur quod odit?</p>
+                    <h2>${blogPost.blogTitle}</h2>
+                    <p>${blogPost.blogDetails}</p>
                     <a href="#" class="btn btn-outline"><i class="fas fa-chevron"></i> Read Our Blog</a>
                 </div>
             </div>
         </div>
+     </c:forEach>
 
-        <div class="row">
-            <div class="column">
-                <div class="column-2">
-                    <img src="images/home/blog.jpg" alt="Blog Post 2">
-                </div>
-            </div>
-            <div class="column">
-                <div class="column-2 bg-primary">
-                    <h4>May 21 2020</h4>
-                    <h2>Blog Post 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eum. Molestiae sed suscipit
-                        repellendus, tenetur repudiandae unde at possimus odio quos doloribus ducimus quas similique et
-                        incidunt, consequatur quod odit?</p>
-                    <a href="#" class="btn btn-outline"><i class="fas fa-chevron"></i> Read Our Blog</a>
-                </div>
-            </div>
-        </div>
 
         <div class="add-blog-button">
             <a class="btn btn-add" href="/addBlog"><i class="fas fa-plus"></i> Add Blog</a>

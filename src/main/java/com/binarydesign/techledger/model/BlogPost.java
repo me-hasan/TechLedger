@@ -17,5 +17,4 @@ public class BlogPost {
     private String blogTitle;
     private Date createDate;
     private String blogDetails;
-    private List<String> blogStack;
 }

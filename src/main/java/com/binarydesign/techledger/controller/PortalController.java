@@ -1,6 +1,8 @@
 package com.binarydesign.techledger.controller;
 
 import com.binarydesign.techledger.model.BlogPost;
+import com.binarydesign.techledger.service.BlogService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,6 +16,9 @@ import java.util.Date;
 
 @Controller
 public class PortalController {
+
+    @Autowired
+    private BlogService service;
 
     @GetMapping({"/","/home"})
     public String home() {
@@ -54,10 +59,9 @@ public class PortalController {
 
     @PostMapping("/handleBlogForm")
     public String handleBlogForm(BlogPost blogPost, Model model) {
-        // Set the current date and time
         blogPost.setCreateDate(new Date());
-        // Add the blogPost object to the model
         model.addAttribute("blogPost", blogPost);
+        service.addBlogPost(blogPost);
         return "success";
     }
 }

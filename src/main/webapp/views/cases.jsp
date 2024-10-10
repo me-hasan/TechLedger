@@ -73,7 +73,7 @@
            </div>
         </div>
 
-        <!-- About Solutions -->
+        <!-- cases pages -->
 
           <div id="cases" class="cases flex-grid section-padding">
              <header class="section-header">

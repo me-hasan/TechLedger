@@ -73,7 +73,7 @@
            </div>
         </div>
 
-        <!-- About Solutions -->
+        <!-- About pages -->
 
         <section class="solutions flex-columns">
            <div class="row">

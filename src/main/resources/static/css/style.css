@@ -193,3 +193,70 @@ img {
 .footer .social > * {
   margin-right: 30px;
 }
+
+
+/**
+blog page design
+*/
+.blog {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add space between rows */
+    margin: 20px; /* Add some margin around the blog section */
+}
+
+
+
+
+
+.column-2 {
+    background: #f8f9fa; /* Light background for better visibility */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.column-2 img {
+    max-width: 100%; /* Ensure images are responsive */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.bg-secondary {
+    background-color: #6c757d; /* Secondary background color */
+    color: #fff; /* White text for contrast */
+}
+
+.bg-primary {
+    background-color: #007bff; /* Primary background color */
+    color: #fff; /* White text for contrast */
+}
+
+.btn-outline {
+    border: 1px solid currentColor; /* Outline button style */
+    color: inherit; /* Inherit text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Add padding */
+    border-radius: 5px; /* Rounded button */
+    display: inline-block; /* Make the button inline */
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Button hover effect */
+}
+
+
+/*
+modal design
+*/
+.modal-content {
+    border-radius: 8px; /* Rounded corners for modal */
+}
+
+.modal-header {
+    background-color: #007bff; /* Primary color for header */
+    color: #fff; /* White text */
+}
+
+.modal-footer {
+    background-color: #f8f9fa; /* Light background for footer */
+}

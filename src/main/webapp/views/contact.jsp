@@ -73,7 +73,7 @@
            </div>
         </div>
 
-        <!-- About Solutions -->
+        <!-- contact page -->
 
           <div id="contact" class="contact flex-columns">
            <div class="row">

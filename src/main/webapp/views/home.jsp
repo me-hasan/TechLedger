@@ -2,6 +2,19 @@
       <!-- Include Header -->
       <jsp:include page="includes/header.jsp" />
 
+        <header class="hero">
+
+
+                <jsp:include page="includes/navbar.jsp" />
+
+
+             <div class="content">
+                 <h1>The Sky Is The Limit</h1>
+                 <p>We provide world class financial assistance</p>
+                 <a href="#about" class="btn"><i class="fas fa-chevron-right"></i> Read More</a>
+             </div>
+        </header>
+
 
 
       <!-- home page -->

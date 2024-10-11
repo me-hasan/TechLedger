@@ -2,9 +2,12 @@
       <!-- Include Header -->
       <jsp:include page="includes/header.jsp" />
 
+      <jsp:include page="includes/navbar.jsp" />
+
 
       <!-- About Icons -->
         <div class="icons bg-light">
+           <br/>
            <div class="flex-items">
               <div>
                  <i class="fas fa-university fa-2x"></i>

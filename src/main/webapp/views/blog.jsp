@@ -5,11 +5,14 @@
 <%@ page import="com.binarydesign.techledger.model.BlogPost" %>
 <%@ page import="com.binarydesign.techledger.repo.BlogRepo" %>
     <!-- Include Header -->
+
     <jsp:include page="includes/header.jsp" />
+    <jsp:include page="includes/navbar.jsp" />
 
 
     <!-- About Icons -->
     <div class="icons bg-light">
+        <br/>
         <div class="flex-items">
             <div>
                 <i class="fas fa-university fa-2x"></i>

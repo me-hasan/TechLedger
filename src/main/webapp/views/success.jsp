@@ -5,9 +5,12 @@
 
 <!-- Include Header -->
 <jsp:include page="includes/header.jsp" />
+<jsp:include page="includes/navbar.jsp" />
+
 
 <!-- Blog Page -->
 <div id="blog" class="blog flex-columns">
+    <br/>
     <div class="row">
         <div class="column">
             <div class="column-2">
